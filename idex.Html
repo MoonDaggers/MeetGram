@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>MeetGram</title>
 </head>
 <body>
     <div class="container">
-      <h1>MeetGram</h1>
-      <div id="mensagens">
+      <div class="conteudo-usuario">
+        <h2>MeetGram</h2>
+        <!-- Aqui você pode adicionar o conteúdo do usuário -->
         
       </div>
-      <form id="formulario">
-        <input type="text" id="mensagemInput" placeholder="Digite sua mensagem">
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="mensagens">
+        <h2>Mensagens</h2>
+        <div id="mensagens">
+          <!-- As mensagens serão exibidas aqui -->
+        </div>
+        <form id="formulario">
+          <input type="text" id="mensagemInput" placeholder="Digite sua mensagem">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </div>
   
     <script src="script.js"></script>

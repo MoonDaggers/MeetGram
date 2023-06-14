@@ -1,75 +1,105 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  #mensagens {
-    width: 100%;
-    height: calc(100% - 70px);
-    border: 1px solid #e5ddd5;
-    background-color: #e5ddd5;
-    padding: 10px;
-    margin-bottom: 20px;
-    overflow-y: auto;
-  }
-  
-  .mensagem {
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .mensagem:nth-child(even) {
-    background-color: #dcf8c6;
-    color: #333;
-  }
-  
-  #formulario {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  #mensagemInput {
-    width: 70%;
-    padding: 5px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-  }
-  
-  button {
-    width: 30%;
-    padding: 5px 10px;
-    background-color: #25d366;
-    color: #fff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #128c7e;
-  }
-  
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #54f24c;
+}
+
+.conteudo-usuario {
+  width: 10%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #078a07;
+  color: #fff;
+}
+
+.perfil {
+  margin-bottom: 20px;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.perfil h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.perfil p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.mensagens {
+  flex-grow: 1;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  background-color:white;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+#mensagens {
+  max-height: calc(100% - 120px);
+  overflow-y: auto;
+}
+
+.mensagem {
+  background-color: #dcf8c6;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.mensagem-recebida {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+#formulario {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#mensagemInput {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+}
+
+button {
+  width: 30%;
+  padding: 5px 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #128c7e;
+}
